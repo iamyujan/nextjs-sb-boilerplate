@@ -1,0 +1,36 @@
+@import 'assets/mixins';
+
+.layout {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+.overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(27, 28, 39, 0.8);
+    transition: all 0.2s ease-in-out;
+    z-index: -88;
+    .hasOpenModal & {
+        opacity: 1;
+        visibility: visible;
+        z-index: 88;
+    }
+}
+
+.pushMain {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    @include av-mq('lap-and-up') {
+        padding-top: 120px;
+    }
+}

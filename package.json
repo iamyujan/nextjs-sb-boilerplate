@@ -1,0 +1,33 @@
+{
+  "name": "NAME",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "12.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "axios": "^0.21.1",
+    "babel-plugin-styled-components": "^1.12.0",
+    "gsap": "file:lib/gsap-bonus.tgz",
+    "html-react-parser": "^1.2.4",
+    "isomorphic-unfetch": "^3.1.0",
+    "lazysizes": "^5.3.1",
+    "next": "^10.0.9",
+    "next-absolute-url": "^1.2.2",
+    "nextjs-breadcrumbs": "^0.9.9",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-is": "^17.0.1",
+    "react-modal": "^3.12.1",
+    "sass": "^1.28.0",
+    "storyblok-js-client": "^3.3.1",
+    "storyblok-react": "^0.1.2",
+    "styled-components": "^5.2.1"
+  }
+}
