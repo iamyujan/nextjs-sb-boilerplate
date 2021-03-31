@@ -15,7 +15,7 @@ export default class extends React.Component {
   static async getInitialProps({ asPath, query }) {
     StoryblokService.setQuery(query)
     let res = await StoryblokService.get(`cdn/stories/${asPath}`, {
-      'resolve_relations': `project_list.projects`
+      'resolve_relations': `article_list.articles`
     })
 
     return {
