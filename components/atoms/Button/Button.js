@@ -9,7 +9,7 @@ const fontFamily = props => (props.fontFamily ? `
 const fontSize = props => (props.fontSize ? `
   font-size: ${props.fontSize};
 ` : `
-  font-size: 5rem;
+  font-size: 1.8rem;
 `)
 
 const fontWeight = props => (props.fontWeight ? `
@@ -33,7 +33,7 @@ const letterSpacing = props => (props.letterSpacing ? `
 const padding = props => (props.padding ? `
   padding: ${props.padding};
 ` : `
-  padding: 0 0 120px;
+  padding: 5px 20px;
 `)
 
 const Button = styled.button`
