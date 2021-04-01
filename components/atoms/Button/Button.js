@@ -3,37 +3,37 @@ import styled from 'styled-components'
 const fontFamily = props => (props.fontFamily ? `
   font-family: ${props.fontFamily};
 ` : `
-  font-family: 'ITC Avant Garde Gothic', sans-serif;
+  font-family: ${({theme}) => theme.buttonFont};
 `)
 
 const fontSize = props => (props.fontSize ? `
   font-size: ${props.fontSize};
 ` : `
-  font-size: 1.8rem;
+  font-size: ${({theme}) => theme.buttonFontSize};
 `)
 
 const fontWeight = props => (props.fontWeight ? `
   font-weight: ${props.fontWeight};
 ` : `
-  font-weight: 400;
+  font-weight: ${({theme}) => theme.buttonFontWeight};
 `)
 
 const lineHeight = props => (props.lineHeight ? `
   line-height: ${props.lineHeight};
 ` : `
-  line-height: .9;
+  line-height: ${({theme}) => theme.buttonLineHeight};
 `)
 
 const letterSpacing = props => (props.letterSpacing ? `
   letter-spacing: ${props.letterSpacing};
 ` : `
-  letter-spacing: -1.5px;
+  letter-spacing: ${({theme}) => theme.buttonLetterSpacing};
 `)
 
 const padding = props => (props.padding ? `
   padding: ${props.padding};
 ` : `
-  padding: 5px 20px;
+  padding: ${({theme}) => theme.buttonPadding};
 `)
 
 const Button = styled.button`
